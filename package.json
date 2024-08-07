@@ -8,11 +8,19 @@
   },
   "devDependencies": {
     "dotenv": "^16.3.1",
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.1",
+    "supertest": "^7.0.0",
+    "vitest": "^2.0.5"
   },
   "scripts": {
     "dev": "nodemon -r dotenv/config ./server.js",
-    "db-reset": "node -r dotenv/config ./db/scripts/reset-table.js"
+    "db-reset": "node -r dotenv/config ./db/scripts/reset-table.js",
+    "start": "node server.js"
   },
-  "type": "module"
+  "type": "module",
+  "name": "bc17-w6-d3-workshop-api-testing-with-supertest-team-lab",
+  "description": "As the information served by an API becomes critical and other software comes to rely on it, developers need confidence that the API works as expected (and doesn't for example fail to respond or respond with missing or incorrect data).",
+  "main": "app.js",
+  "author": "",
+  "license": "ISC"
 }
