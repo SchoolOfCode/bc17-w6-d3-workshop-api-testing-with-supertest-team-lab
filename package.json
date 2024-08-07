@@ -15,7 +15,8 @@
   "scripts": {
     "dev": "nodemon -r dotenv/config ./server.js",
     "db-reset": "node -r dotenv/config ./db/scripts/reset-table.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "test" : "vitest"
   },
   "type": "module",
   "name": "bc17-w6-d3-workshop-api-testing-with-supertest-team-lab",

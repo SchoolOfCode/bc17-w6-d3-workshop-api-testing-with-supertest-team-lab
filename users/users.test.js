@@ -8,6 +8,8 @@ test("GET /api/health works", async () => {
     expect(response.body).toEqual (
  { success: true, payload: "API is running correctly" }
     )
+    expect(response.status).toEqual(200);
+    expect(response.headers["content-type"]).toMatch(/json/);
 })
 
 
